@@ -1,0 +1,580 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background: rgba(163, 163, 163, 0.774);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+.container{
+    max-width: 700px;
+    margin: auto;
+}
+header{
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:aquamarine;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header nav p{
+    font-weight: 1;
+    padding-right: 10px;
+}
+
+header a:hover{
+    color: teal;
+}
+
+.contenedor{
+    flex-direction:row;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.formulario{
+    position: relative;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: 80px;
+}
+.formulario h1{
+    margin-top: -80px;
+}
+
+h1{
+    font-size: larger;
+    text-align: center;
+}
+
+#head{
+    background-color: darkcyan;
+}
+
+h2{
+    font-size: 22px;
+    color: white;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td{
+    padding: 15px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    width: 240px;
+    max-width: 250px;
+    font-size: large;
+    font-weight: normal;
+    background-color: whitesmoke;
+}
+
+
+.contenedor .carta{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 50px;
+    width: 100%;
+}
+
+.carta a{
+    color: rgb(15, 0, 99);
+}
+
+.tablita{
+
+    background-color: darkcyan;
+    padding: 15px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bolder;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+.tablita2{
+    background-color: rgb(133, 133, 133);
+    padding-left: 626px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 620px;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+}
+
+button{
+    padding: 10px 25px 10px 25px;
+    align-items: center;
+    text-align: center;
+}
+.table{
+    width: 1350px;
+    display: flex;
+    justify-content: left;
+    background-color: darkcyan;
+}
+
+.posicion {
+    border: 3px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 330px;
+    max-width: 330px;
+    font-size: large;
+    font-weight:bolder;
+    background-color: rgb(133, 133, 133);
+}.posicion2 {
+    border: 3px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: large;
+    font-weight:bolder;
+    background-color: rgb(133, 133, 133);
+}.posicion3 {
+    border: 3px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: large;
+    font-weight:bolder;
+    background-color: rgb(133, 133, 133);
+}.posicion4 {
+    border: 3px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: large;
+    font-weight:bolder;
+    background-color: rgb(133, 133, 133);
+}.posicion5 {
+    border: 3px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: large;
+    font-weight:bolder;
+    background-color: rgb(133, 133, 133);
+}.pos{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 330px;
+    max-width: 330px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: whitesmoke;
+}.pos2{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: whitesmoke;
+}.pos3{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: whitesmoke;
+}.pos4{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: whitesmoke;
+}.pos5{
+    border: 2px solid black;
+    border-collapse: collapse;
+    color:rgb(0, 0, 0);
+    min-width: 250px;
+    max-width: 250px;
+    font-size: 16px;
+    font-weight:bolder;
+    background-color: rgb(114, 255, 101);
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    text-align: center;
+}.buscar input{
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: center;
+}.buscar button{
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: darkcyan;
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}.buscar button:hover{
+    background-color: rgb(2, 105, 105);
+}.buscar2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    text-align: center;
+}.buscar2 input{
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: center;
+}.buscar2 button{
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: darkcyan;
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}.buscar2 button:hover{
+    background-color: rgb(2, 105, 105);
+}
+
+.justifica
+{
+    height: 700px;
+    display: flex;
+    justify-content: left;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 95px;
+}
+
+#btn{
+    margin-left: 15px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+
+#btn2{
+    margin-top: 10px;
+}
+
+#btn a{
+    padding: 10px 20px;
+    font-weight: bolder;
+    background-color: rgb(247, 247, 89);
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px black;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-left: -20px;
+}
+#btn a:hover{
+    background-color: rgb(110, 110, 6);
+}
+#btn2 a{
+    padding: 10px 20px;
+    font-weight: bolder;
+    background-color: rgb(57, 221, 51);
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px black;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-left: -20px;
+}
+#btn2 a:hover{
+    background-color: rgb(19, 100, 9);
+}.tabla{
+    overflow-y: scroll;
+}.tabla::-webkit-scrollbar{
+    width: 20px;
+    background-color: rgb(222, 222, 222);
+}.tabla::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right, rgb(120, 120, 120)0%, rgb(196, 196, 196) 100%);
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+
+
+
+@media (min-width: 720px){
+
+    header{
+        margin: 0;
+        background-color: black;
+        color: aliceblue;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction:row;
+        justify-content:flex-start;
+    }
+
+    .contenedor .carta{
+        text-align: left;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        max-width: 450px;
+        background-color: white;
+        margin-left: 0;
+        border: 3px solid rgba(0, 0,0);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0);
+        height: 1200px;
+    }
+
+    .formulario{
+        position: static;
+        justify-content: left;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        display:block;
+        font-size: 22px;
+        margin-top: 200px;
+        margin-left: -900px;
+
+    }
+    
+    .carta a{
+        color: rgb(67, 48, 177);
+    }
+
+    .carta a:hover{
+        color: rgb(21, 0, 59);
+    }
+
+    .carta li{
+        padding: 15px;
+        border-bottom: 2px solid black;
+        font-size: larger;
+    }
+
+    .carta p{
+        font-size: large;
+        color: rgba(59, 59, 59, 0.788);
+    }
+
+    .carta h1{
+        text-align: left;
+        border: 2px solid black;
+        padding: 25px;
+    }
+
+    table{
+        border: 2px solid black;
+        border-collapse: collapse;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    header .container{
+        flex-direction: row;
+    }
+
+    header nav{
+        font-weight: bold;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        margin-left: 2vw;
+    }
+
+    header .logo{
+        padding: 0px 10vw 0px 0px;
+        font-weight: bold;
+        color: aquamarine;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: -4vw; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .conta{
+        text-align: left;
+        height: 50px;
+        width: 800px;
+        display: flex;
+        margin-top: 80px;
+        margin-left: 150px;
+        justify-content: center;
+    }
+    .buscar{
+        margin-top: -50px;
+        margin-left: 250px;
+    }
+    .buscar label{
+        text-align: left;
+        width: 130px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }.buscar form{
+        display: flex;
+        text-align: center;
+    }.buscar input{
+        margin-left: 10px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+        height: 50px;
+        width: 200px;
+        text-align: center;
+    }.buscar button{
+        margin-bottom: 50px;
+        background-color: darkcyan;
+        border: 1px solid black;
+        box-shadow: 4px 4px 10px black;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }.buscar button:hover{
+        background-color: rgb(2, 105, 105);
+    }.buscar2{
+        margin-top: -50px;
+        margin-left: 50px;
+    }.buscar2 label{
+        text-align: center;
+        width: 250px;
+        margin-top: 10px;
+    }.buscar2 form{
+        display: flex;
+        text-align: center;
+    }.buscar2 input{
+        margin-left: 10px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+        height: 50px;
+        width: 200px;
+        text-align: center;
+    }.buscar2 button{
+        margin-bottom: 50px;
+        background-color: darkcyan;
+        border: 1px solid black;
+        box-shadow: 4px 4px 10px black;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }.buscar2 button:hover{
+        background-color: rgb(2, 105, 105);
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 95px;
+    }
+
+    #btn{
+        margin-left: 15px;
+        padding-right: 40px;
+        margin-top: 10px;
+    }
+
+    #btn2{
+        margin-top: 10px;
+    }
+
+    #btn a{
+        padding: 10px 20px;
+        font-weight: bolder;
+        background-color: rgb(247, 247, 89);
+        border: 1px solid black;
+        box-shadow: 4px 4px 10px black;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        margin-left: -20px;
+    }
+    #btn a:hover{
+        background-color: rgb(110, 110, 6);
+    }
+    #btn2 a{
+        padding: 10px 20px;
+        font-weight: bolder;
+        background-color: rgb(57, 221, 51);
+        border: 1px solid black;
+        box-shadow: 4px 4px 10px black;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        margin-left: -20px;
+    }
+    #btn2 a:hover{
+        background-color: rgb(19, 100, 9);
+    }
+
+
+}

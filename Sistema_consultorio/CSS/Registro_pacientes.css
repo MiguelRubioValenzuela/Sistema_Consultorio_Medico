@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background: linear-gradient(100deg, white,darkcyan );
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 12px 23px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /*      Tam  Tipo    Color*/
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+    /*          X    Y   Vol  Color*/
+    color: white;
+    background-color:darkcyan;
+}
+
+button:hover{
+    background-color:darkslategrey;
+}
+
+.container{
+    max-width: 700px;
+    margin: auto;
+}
+header{
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:aquamarine;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header nav p{
+    font-weight: 1;
+    padding-right: 10px;
+}
+
+header a:hover{
+    color: teal;
+}
+
+.contenedor{
+    flex-direction:row;
+    justify-content: center;
+}
+
+
+.formulario{
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: 80px;
+}
+
+h1{
+    font-size: larger;
+    text-align: center;
+}
+
+#head{
+    background-color: darkcyan;
+}
+
+h2{
+    font-size: 22px;
+    color: white;
+}
+
+table{
+    background-image: linear-gradient(
+        0deg,
+        rgba(172, 172, 172, 0.466),
+        rgb(189, 189, 189)
+    ), url("../img/c.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid black;
+    border-collapse: collapse;
+    width: 600px;
+    margin-left: 0vw;
+}
+
+tr{
+    border: 5px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td{
+    padding: 20px;
+    border: 5px solid black;
+    border-collapse: collapse;
+    color:white
+}
+
+.mover{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario input{
+    width: 100%;
+    height: 60px;
+    font-size: larger;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: center;
+}
+
+.formulario select{
+    width: 100%;
+    height: 40px;
+    font-size: larger;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: center;
+}
+
+.formulario label{
+    color: black;
+}
+
+.contenedor .carta{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 50px;
+    width: 100%;
+}
+
+.carta a{
+    color: rgb(15, 0, 99);
+}
+
+
+
+
+
+@media (min-width: 720px){
+
+    header{
+        margin: 0;
+        background-color: black;
+        color: aliceblue;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction:row;
+        justify-content:flex-start;
+    }
+
+    .contenedor .carta{
+        text-align: left;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        max-width: 450px;
+        background-color: white;
+        margin-left: 0;
+        border: 3px solid rgba(0, 0,0);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0);
+        height: 1000px;
+    }
+
+    .formulario{
+        position: static;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        margin-top: 45px;
+        margin-left: 17vw;
+    }
+    
+    .carta a{
+        color: rgb(67, 48, 177);
+    }
+
+    .carta a:hover{
+        color: rgb(21, 0, 59);
+    }
+
+    .carta li{
+        padding: 15px;
+        border-bottom: 2px solid black;
+        font-size: larger;
+    }
+
+    .carta p{
+        font-size: large;
+        color: rgba(59, 59, 59, 0.788);
+    }
+
+    .carta h1{
+        text-align: left;
+        border: 3px solid black;
+        padding: 25px;
+    }
+
+    table{
+        margin-left: 0;
+    }
+    
+
+    header .container{
+        flex-direction: row;
+    }
+
+    header nav{
+        font-weight: bold;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        margin-left: 2vw;
+    }
+
+    header .logo{
+        padding: 0px 10vw 0px 0px;
+        font-weight: bold;
+        color: aquamarine;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: -4vw; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}

@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(117, 215, 240);
+}
+
+#cerrar{
+    text-decoration: none;
+    color: red;
+}
+
+#cerrar:hover{
+    color: rgb(165, 0, 0);
+}
+
+.information{
+    text-align: center;
+}
+
+.information h1{
+    padding: 25px;
+    margin-left: 20px;
+}
+.information #p{
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+#nombre{
+    margin-top: -55px;
+}
+.information .just{
+    display: flex;
+    justify-content:left;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 40px;
+    background-color: whitesmoke;
+}
+
+.text h2{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.text{
+    display: block;
+    padding-right: 20px;
+    width: 450px; 
+    height:  150px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: rgb(19, 19, 19);
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 6px 6px 10px black;
+}
+
+.data{
+    width: 450px;
+    border-top: 2px solid black;
+    text-align: center;
+}
+.margin{
+    margin-top: 100px;
+    margin-left: 430px;
+}
+
+.margin #mod{
+    border: 2px solid black;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+    background-color: rgb(196, 111, 0);
+    box-shadow: 6px 6px 10px black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#mod:hover{
+    background-color: rgb(114, 65, 0);
+}

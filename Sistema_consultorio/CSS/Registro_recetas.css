@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background: rgba(163, 163, 163, 0.774);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+.container{
+max-width: 900px;
+margin: auto;
+}
+header{
+    margin: 0;
+    margin-right: 0px;
+    width: auto;
+    background-color: black;
+    color: aliceblue;
+    flex-direction: column;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:aquamarine;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header nav p{
+    font-weight: 1;
+    padding-right: 10px;
+}
+
+header a:hover{
+    color: teal;
+}
+.contener{
+    display: flexbox;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}.contener h1{
+    display: flex;
+    justify-content: center;
+}.no{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+}.cont{
+    display: flex;
+    background-color: rgb(252, 244, 199);
+    justify-content: center;
+    min-width: 1600px;
+    max-width: 1600px;
+    min-height: 100px;
+    max-height: 100px;
+    margin-left: 200px;
+}.in{
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 50px;
+    max-height: 50px;
+    font-size: 34px;
+    margin-right: 100px;
+    margin-left: 190px;
+    text-align: center;
+}.move{
+    margin-left: 200px;
+}.on{
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 50px;
+    max-height: 50px;
+    font-size: 34px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 100px;
+    text-align: center;
+}.mov{
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 50px;
+    max-height: 50px;
+    font-size: 34px;
+    margin-top: 0px;
+    margin-left: -100px;
+    text-align: center;
+}.se{
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 50px;
+    max-height: 50px;
+    font-size: 34px;
+    margin-top: 0px;
+    margin-left: 350px;
+    text-align: center;
+}.contenedor form{
+    display: block;
+    margin-left: 200px;
+}form input{
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 50px;
+    max-width: 50px;
+    margin-top: -20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}.alt{
+    margin-left: 250px;
+    margin-top: -132px;
+}.temp{
+    margin-left: 500px;
+    margin-top: -130px;
+}.car{
+    margin-left: 800px;
+    margin-top: -130px;
+}.aler{
+    margin-left: 1100px;
+    margin-top: -130px;
+    min-width: 500px;
+    max-width: 500px;
+}.aler input{
+    min-width: 500px;
+    max-width: 500px;
+}.diag textarea{
+    font-size: 20px;
+    margin-top: -20px;
+}button{
+    margin-left: 1150px;
+    margin-top: -110px;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 80px;
+    max-height: 80px;
+    background-color: rgb(16, 105, 16);
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 3px solid black;
+    box-shadow: 4px 4px 10px black;
+}button:hover{
+    background-color: rgb(33, 172, 33);
+}
+
+
+@media (min-width: 720px){
+
+    header{
+        margin: 0;
+        background-color: black;
+        color: aliceblue;
+        flex-direction: column;
+        min-width: 100%;
+        max-width: 200%;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    header nav{
+        font-weight: bold;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        margin-left: 2vw;
+    }
+
+    header .logo{
+        padding: 0px 10vw 0px 0px;
+        font-weight: bold;
+        color: aquamarine;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: -4vw; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+}

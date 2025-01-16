@@ -1,0 +1,18 @@
+body{
+    background: linear-gradient(70deg, whitesmoke,rgb(0, 217, 255) );
+}
+
+.header{
+    font-size: 30px;
+}
+.actualizar{
+    margin-top: 50px;
+    margin-left: 275px;
+}
+
+.mover
+{
+    margin-top: 50px;
+    width: 550px;
+    margin-left: 90px;
+}

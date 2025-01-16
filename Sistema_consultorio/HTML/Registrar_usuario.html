@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/Registro.css">
+
+    <script>
+
+        function Solo_letras(x)
+        {
+            key = x.keyCode || x.which;
+            tecla = String.fromCharCode(key).toString();
+            letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnñopqrstuvwxyzáéíóú";
+
+            especiales = [8, 13];
+            tecla_especial = false;
+            for(var i in especiales)
+            {
+                if(key == especiales[i])
+                {
+                    tecla_especial = true;
+                    break;
+                }   
+            }
+            if(letras.indexOf(tecla) == -1 && !tecla_especial)
+            {
+                alert("Solamente puedes ingresar letras.");
+                return false;
+            }
+        }
+
+        function Solo_numeros(num)
+        {
+            if(window.event){
+                tecla_numero = num.keyCode;
+            }else{
+                tecla_numero = num.which;
+            }
+            if((tecla_numero > 47 && tecla_numero < 58) || tecla_numero == 8 || tecla_numero == 13 )
+            return true;
+            else{
+                alert("Solo puedes ingresar numeros en ese campo.");
+                return false;
+            }
+        }
+
+        function valida_admin()
+        {
+            var id = $_POST['IDs'];
+            alert("funciona la conexion y el ID es", id);
+        }
+
+    </script>
+
+</head>
+<body>
+    <div class="formulario">
+        <h1>Registrar nuevo usuario</h1>
+        <form name="Data_Main" method="post" action="../PHP/Registrar_usuario.php" >
+            <div class="username">
+                <input type="text" onkeypress="return Solo_numeros(event)" pattern=".{6,8}" maxlength="8" name="IDs" title="Es obligatorio rellenar el ID del administrador con un minimo de 6 caracteres" required> 
+                <label for=""> ID Administrador:</label>
+            </div>
+            <div class="username">
+                <input type="text" name="nombre" onkeypress="return Solo_letras(event);">
+                <label for="">Nombre completo:</label>
+            </div>
+            <div class="username">
+                <input type="email" name="email" title="Se requiere obligatoriamente el email" required>
+                <label for=""> Correo electronico:</label>
+            </div>
+            <div class="username">
+                <input type="password" name="password" pattern=".{8,20}" title="Se requiere Contraseña minimo 8 caracteres, maximo 20" maxlength="20" required>
+                <label> Contraseña:</label>
+            </div>
+            <div class="username">
+                <input type="tel" name="telefono" pattern=".{10,11}" title="El telfono requiere 10 digitos" maxlength="10" onkeypress="return Solo_numeros(event)">
+                <label for=""> Telefono:</label>
+            </div>
+            <div class="username">
+                <input type="text" name="curp" pattern=".{18,18}" title="La CURP requiere 18 caracteres" maxlength="18" onkeyup="this.value=this.value.toUpperCase();" required>
+                <label for=""> CURP:</label>
+            </div>
+                <p id="tipo">Tipo de usuario: </p>
+                <select name="type" id="seleccion">
+                    <option value="Encargado en caja">Encargado en caja</option>
+                    <option value="Medico">Medico</option>
+                </select>
+            <div class="username">
+                <input type="text" name="cedula" pattern=".{8,8}" title="La Cedula medica requiere 18 caracteres" maxlength="18" onkeyup="this.value=this.value.toUpperCase();" required>
+                <label for=""> Cedula:</label>
+            </div>
+            <button id="enviar">Registrar</button>
+            
+            <div class="registrarse">
+                Volver a  <a href="../html/Sign_in.html">Inicio de sesion</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
